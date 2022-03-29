@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { /* etiqueta raiz */
+    font-size: 62.5%;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(indigo, #ba8cfd);
+    /*background-color:#ba8cfd;*/
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: indigo;
+    padding: 5px 0 10px 20px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+nav ul li {
+    float: left;
+    padding: 5px 15px;
+    font-size: 2rem;
+}
+
+nav ul li:hover {
+    background-color:darkmagenta;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+#buscar {
+    width: 25%;
+    margin: 0 0 0 10%;
+    padding: 0;
+}
+
+#buscar input {
+    color: white;
+    background-color: indigo;
+    border: none;
+    width: 70%;
+    margin-top: 7px;
+    padding: 5px 0;
+}
+
+#buscar:hover {
+    background-color: indigo;
+}
+
+#buscar input:hover {
+    background-color: darkmagenta;
+}
+
+#carrito {
+    float: right;
+    margin: 0 50px 0 0;
+    padding: 0;
+}
+
+#carrito:hover {
+    background-color: indigo;
+}
+
+section {
+    height: 200px;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.parallax {
+    background-image: url("../images/fondo.jpg");
+    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+
+.deuxseurs {
+    height: 120px;
+    background-color: darkmagenta;
+}
+
+.deuxseurs p {
+    font-size: 2rem;
+    margin: 0 150px;
+    color: white;
+    text-align: center;
+}
+
+.muestras {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.muestra {
+    width: 23%;
+    margin: 40px auto;
+    display: flex;
+    align-items: flex-end; 
+    border: 1px solid white;  
+}
+
+.muestra img {
+    height: 220px;
+}
+
+.precio {
+    width: 100%;
+    height: 130px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.precio p {
+    font-size: .5em;
+}
+
+.contacto {
+    font-size: 1.2em;
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    padding: 20px 50px;
+    border: 1px solid indigo;
+    border-radius: 10px;
+    background-color: indigo;
+}
+
+.contacto .elemento {
+    width: 100%;
+    margin: 10px;
+}
+
+.contacto .elemento input {
+    width: 97.7%;
+    border: none;
+    color: white;
+    padding: 5px;
+    background-color: darkmagenta;
+}
+
+.contacto textarea {
+    border: none;
+    margin-top: 3px;
+    width: 100%;
+    color: white;
+    background-color: darkmagenta;
+}
+
+.contacto .elemento label {
+    font-size: 1.2em;
+}
+
+.contacto .elemento input[type="submit"] {
+    width: 50%;
+    margin-left: 50%;
+    cursor: pointer;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.company {
+    font-size: 1.2em;
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    padding: 20px 50px;
+    border: 1px solid indigo;
+    border-radius: 10px;
+    background-color: indigo;
+    display: flex;
+    align-items: flex-end; 
+}
+
+.company .datos {
+    width: 50%;
+    height: 230px;
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.company .datos iframe {
+    width: 300px;
+    height: 225px;
+}
+
+div sup {
+    font-size: .5em;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color:white;
+}
+
+footer {
+    color: white;
+    height: 25px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
