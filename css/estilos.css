@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,40 +7,45 @@
 html { /* etiqueta raiz */
     font-size: 62.5%;
     font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    background-color: #cbc0d3;
 }
 
 body {
-    background: linear-gradient(indigo, #ba8cfd);
+    background: linear-gradient(#735d78, #efc3e6);
     /*background-color:#ba8cfd;*/
+    display: grid;
 }
 
 header {
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
 }
 
 nav {
     width: 100%;
-    background-color: indigo;
-    padding: 5px 0 10px 20px;
-    display: inline-block;
+    background-color: #735d78;
+    padding: 5px 0 10px;
 }
 
 nav ul {
     list-style-type: none;
-    margin-top: 5px;
+    /* margin-top: 10px; */
+    margin: 0 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
 }
 
 nav ul li {
-    float: left;
-    padding: 5px 15px;
-    font-size: 2rem;
+    padding: 5px 15px 0;
+    font-size: 2.2rem;
 }
 
 nav ul li:hover {
-    background-color:darkmagenta;
+    border-radius: 20px;
+    background-color:#9c89b8;
 }
 
 nav ul a {
@@ -47,41 +53,53 @@ nav ul a {
     text-decoration: none;
 }
 
-nav ul a:hover {
-    color: white;
+#buscar {
+    width: 30%;
+    height: 100%;
+    /* display: inline-block; */
+    margin-top: 5px;
+    padding-top: 0;
+    border: 1px solid #9c89b8;
+    border-radius: 20px;
 }
 
-#buscar {
-    width: 25%;
-    margin: 0 0 0 10%;
-    padding: 0;
+#form_buscar {
+    width: 100%;
+    display: flex;
 }
 
 #buscar input {
+    display: inline-block;
     color: white;
-    background-color: indigo;
+    background-color: #735d78;
     border: none;
-    width: 70%;
-    margin-top: 7px;
+    width: 80%;
+    margin: 6px 0 2px 0;
     padding: 5px 0;
+    background-color: inherit;
 }
 
-#buscar:hover {
-    background-color: indigo;
-}
-
-#buscar input:hover {
-    background-color: darkmagenta;
+#button-search {
+    width: 20%;
+    color: white;
+    border: none;
+    background-color: #735d78 ;
+    padding: 3px 10px;
+    margin-top: 5px;
+    background-color: inherit;
 }
 
 #carrito {
-    float: right;
-    margin: 0 50px 0 0;
-    padding: 0;
+    width: 70px;
+    margin: 6px 25px 0 0;
+    padding: 3px 0 0;
+    text-align: center;
+    border: 1px solid #9c89b8;
+    border-radius: 20px;
 }
 
 #carrito:hover {
-    background-color: indigo;
+    background-color: #9c89b8;
 }
 
 section {
@@ -92,17 +110,17 @@ section {
 
 .parallax {
     background-image: url("../images/fondo.jpg");
-    height: 250px;
+    height: 280px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 .deuxseurs {
-    height: 120px;
-    background-color: darkmagenta;
+    height: 150px;
+    background-color: #9c89b8;
 }
 
 .deuxseurs p {
@@ -149,9 +167,9 @@ section {
     margin: 0 auto;
     color: white;
     padding: 20px 50px;
-    border: 1px solid indigo;
+    border: 1px solid #735d78;
     border-radius: 10px;
-    background-color: indigo;
+    background-color: #735d78;
 }
 
 .contacto .elemento {
@@ -164,7 +182,7 @@ section {
     border: none;
     color: white;
     padding: 5px;
-    background-color: darkmagenta;
+    background-color: #f0a6caaa;
 }
 
 .contacto textarea {
@@ -172,7 +190,7 @@ section {
     margin-top: 3px;
     width: 100%;
     color: white;
-    background-color: darkmagenta;
+    background-color: #f0a6caaa;
 }
 
 .contacto .elemento label {
@@ -194,9 +212,9 @@ section {
     margin: 0 auto;
     color: white;
     padding: 20px 50px;
-    border: 1px solid indigo;
+    border: 1px solid #735d78;
     border-radius: 10px;
-    background-color: indigo;
+    background-color: #735d78;
     display: flex;
     align-items: flex-end; 
 }
@@ -221,12 +239,13 @@ div sup {
 h1 {
     font-size: 5rem;
     text-align: center;
-    color:white;
+    color:#47126b;
 }
 
 footer {
-    color: white;
-    height: 25px;
+    color: #735d78;
+    /* background-color: #b8bedd; */
+    height: 100px;
     width: 100%;
     margin: 5px 0;
     padding: 10px 0;
