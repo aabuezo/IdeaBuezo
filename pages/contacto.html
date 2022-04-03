@@ -56,22 +56,14 @@
     <section class="contacto"> <!-- contacto -->
             <h2>Envianos tus comentarios</h2>
             <form action="" autocomplete="off">
-                <div class="elemento">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                </div>
-                <div class="elemento">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="elemento">
-                    <textarea name="texto" id="texto" cols="30" rows="3">
+                    <label class="elemento" for="nombre">Nombre</label>
+                    <input class="elemento contacto__input" type="text" name="nombre" id="nombre" required>
+                    <label class="elemento" for="email">Email</label>
+                    <input class="elemento contacto__input" type="email" name="email" id="email" required>
+                    <textarea class="elemento" name="texto" id="texto" cols="30" rows="3">
 Escribe aquí tu comentario...
                     </textarea>
-                </div>
-                <div class="elemento">
-                    <input type="submit" value="Enviar">
-                </div>
+                    <input class="elemento" type="submit" value="Enviar">
             </form>
     </section>
     <footer>
