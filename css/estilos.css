@@ -14,6 +14,44 @@ html { /* etiqueta raiz */
 
 body {
     background: linear-gradient(#735d78, #efc3e6);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "parallax"
+    "deuxsoeurs"
+    "muestras"
+    "company"
+    "contacto"
+    "carrito"
+    "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+section.parallax {
+    grid-area: parallax;
+}
+
+section.deuxsoeurs {
+    grid-area: deuxsoeurs;
+}
+
+section.muestras {
+    grid-area: muestras;
+}
+
+section.company {
+    grid-area: company;
+}
+
+section.contacto {
+    grid-area: contacto;
+}
+
+footer {
+    grid-area: footer;
 }
 
 
@@ -25,6 +63,7 @@ header {
     position: fixed;
     top: 0px;
     z-index: 2;
+    
 }
 
 nav {
@@ -153,7 +192,7 @@ section {
 
 /* configuracion de la seccion del título y presentacion */
 
-.deuxseurs {
+.deuxsoeurs {
     height: 1fr;
     padding-top: 60px;
     background: linear-gradient(#735d78, #9c89b8c0);
@@ -161,7 +200,7 @@ section {
     box-shadow: 2px 2px 15px #F1E0AC;
 }
 
-.deuxseurs p {
+.deuxsoeurs p {
     font-size: 2.5rem;
     margin: 0 10%;
     /* color: #735d78; */
@@ -170,7 +209,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .deuxseurs p {
+    .deuxsoeurs p {
         font-size: 1.5rem;
     }
 }
@@ -353,7 +392,7 @@ h1 {
 .company {
     font-size: 1.2em;
     width: 50%;
-    height: 100%;
+    height: 300px;
     margin: 50px auto;
     color: white;
     padding: 20px 20px;
