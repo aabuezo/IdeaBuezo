@@ -1,3 +1,5 @@
+/* configuracion general comun a todas las secciones */
+
 /* Reset */
 * {
     margin: 0;
@@ -13,6 +15,10 @@ html { /* etiqueta raiz */
 body {
     background: linear-gradient(#735d78, #efc3e6);
 }
+
+
+
+/* configuracion del header y del menu */
 
 header {
     width: 100%;
@@ -32,8 +38,14 @@ nav ul {
     margin: 0 10px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-between;
+    }
 }
 
 nav ul li {
@@ -41,15 +53,15 @@ nav ul li {
     font-size: 2.2rem;
 }
 
-nav ul li:hover {
-    border-radius: 20px;
-    background-color:#9c89b8;
-    box-shadow: 2px 2px 8px #F1E0AC;
-}
-
-nav ul a {
+nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+nav ul li:hover {
+    border-radius: 15px;
+    background-color:#9c89b8;
+    box-shadow: 2px 2px 8px #F1E0AC;
 }
 
 #buscar {
@@ -58,7 +70,7 @@ nav ul a {
     margin-top: 5px;
     padding-top: 0;
     border: 1px solid #9c89b8;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #form_buscar {
@@ -99,7 +111,7 @@ nav ul a {
     padding: 3px 0 0;
     text-align: center;
     border: 1px solid #9c89b8;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #carrito:hover {
@@ -111,6 +123,10 @@ nav ul a {
         width: 33px;
     }
 }
+
+
+
+/* configuracion de la sección de parallax */ 
 
 section {
     height: 200px;
@@ -133,9 +149,13 @@ section {
     }
 }
 
+
+
+/* configuracion de la seccion del título y presentacion */
+
 .deuxseurs {
     height: 1fr;
-    /* background-color: #9c89b8c0; */
+    padding-top: 60px;
     background: linear-gradient(#735d78, #9c89b8c0);
     border-bottom: 1px solid #735d78;
     box-shadow: 2px 2px 15px #F1E0AC;
@@ -155,11 +175,38 @@ section {
     }
 }
 
+h1 {
+    font-size: 6rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        padding-top: 35px;
+    }
+}
+
+
+
+/* configuracion de la seccion de las cards */
+
 .muestras {
-    min-height: 500px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+#ofertas {
+    height: 500px;
+}
+
+#shop {
+    height: 1700px;
 }
 
 .card {
@@ -174,7 +221,22 @@ section {
     flex-flow: column;
     align-items: center;
     justify-items: center;
+    position: relative;
 }
+
+/* ver de agregar un corazon a las cards */
+/* 
+.card button {
+    position:absolute;
+    align-self: flex-end;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.card button:hover {
+    color: red;
+} */
 
 .card img {
     max-width: 80%;
@@ -215,11 +277,19 @@ section {
     .card {
         max-width: 25%;     
     }
+
+    #ofertas {
+        height: 800px;
+    }
 }
 
 .precio .descripcion {
     font-size: 1.5rem;
 }
+
+
+
+/* configuracion de la seccion de contacto */
 
 .contacto {
     font-size: 1.2em;
@@ -276,11 +346,15 @@ section {
     background-color: #9c89b8c0;
 }
 
+
+
+/* configuracion de la sección de Company */
+
 .company {
     font-size: 1.2em;
     width: 50%;
     height: 100%;
-    margin: 30px auto;
+    margin: 50px auto;
     color: white;
     padding: 20px 20px;
     border: 1px solid white;
@@ -301,12 +375,16 @@ section {
     font-size: 1.2em;
 }
 
+.company .datos h2 {
+    padding-bottom: 20px;
+}
+
 .company .datos iframe {
     width: 100%;
     height: 225px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .company {
         width: 80%;
     }
@@ -317,27 +395,88 @@ section {
 
 }
 
-h1 {
-    font-size: 6rem;
-    font-weight: bolder;
-    text-align: center;
-    padding-top: 20px;
+
+
+/* configuración del footer */
+
+footer {
     color: white;
-    text-shadow: 2px 2px gray;
+    /* height: 120px; */
+    width: 100%;
+    margin: 20px 50px 0 0;
+    padding: 10px 0;
+    background-color: #735d78;
+    box-shadow: 2px 2px 10px #F1E0AC;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-    h1 {
-        padding-top: 35px;
+    footer {
+        height: 150px;
+    }
+
+    audio {
+        visibility: collapse;
+    }
+
+    footer ul {
+        visibility: collapse;
     }
 }
 
-footer {
-    color: #735d78;
-    height: 100px;
-    width: 100%;
-    margin: 20px 0 0;
-    padding: 10px 0;
+footer h2 {
+    max-width: 90%;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
     text-align: center;
-    font-size: 1.1em;
+}
+
+#copyright {
+    margin: auto;
+}
+
+#audio {
+    margin: auto;
+    margin-left: 10%;
+}
+
+.redes {
+    margin-left: 10%;
+}
+
+.redes_sociales {
+    padding: 0 20px 0 20px;
+    color: white;
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+.redes_sociales:hover {
+    color: black;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-left: 10%;
+}
+
+footer ul li {
+    font-size: 22px;
+}
+
+footer ul li a {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100px;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    width: 100px;
+    background-color: #9c89b8c0;
+    border-radius: 15px;
 }
