@@ -168,7 +168,7 @@ nav ul li:hover {
 /* configuracion de la sección de parallax */ 
 
 section {
-    height: 200px;
+    height: 250px;
     width: 100%;
     margin: 2px 0;
 }
@@ -246,6 +246,10 @@ h1 {
 
 #shop {
     height: 1700px;
+}
+
+#cards_carrito {
+    height: 500px;
 }
 
 .card {
@@ -426,6 +430,7 @@ h1 {
 @media (max-width: 768px) {
     .company {
         width: 80%;
+        height: 440px;
     }
     .company .datos {
         width: 100%;
@@ -442,7 +447,7 @@ footer {
     color: white;
     /* height: 120px; */
     width: 100%;
-    margin: 20px 50px 0 0;
+    margin: 20px 20px 0 0;
     padding: 10px 0;
     background-color: #735d78;
     box-shadow: 2px 2px 10px #F1E0AC;
@@ -463,6 +468,7 @@ footer {
     footer ul {
         visibility: collapse;
     }
+    
 }
 
 footer h2 {
@@ -483,7 +489,8 @@ footer h2 {
 }
 
 .redes {
-    margin-left: 10%;
+    margin: auto;
+    align-items: center;
 }
 
 .redes_sociales {
