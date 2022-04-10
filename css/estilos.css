@@ -501,16 +501,24 @@ footer h2 {
 }
 
 .redes_sociales:hover {
+    /* padding-bottom: 12px;
+    padding-right: 5px;
+    color: #F1E0AC;
+    box-shadow: 2px 2px 10px #F1E0AC;
+    border-radius: 20px; */
     color: black;
 }
 
 footer ul {
+    /* font-family: Arial, Helvetica, sans-serif; */
     list-style-type: none;
+    /* justify-content: space-evenly; */
     margin-left: 10%;
 }
 
 footer ul li {
-    font-size: 22px;
+    /* display: inline; */
+    font-size: 1.2rem;
 }
 
 footer ul li a {
