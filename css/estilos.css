@@ -36,6 +36,10 @@ nav {
     font-size: 2rem;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 @media (max-width:768px) {
     .nav-item {
         font-size: 1.5rem;
@@ -63,7 +67,7 @@ nav ul li:hover {
 }
 
 .lista-items {
-    width: 50%;
+    width: 90%;
 }
 
 .cuadro-pago {
@@ -163,12 +167,6 @@ section {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .deuxsoeurs p {
-        font-size: 1.2rem;
-    }
-}
-
 h1 {
     font-family: 'Dancing Script', 'Times New Roman', Times, serif;
     font-size: 6rem;
@@ -179,7 +177,12 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .deuxsoeurs p {
+        font-size: 1.2rem;
+    }
+
     h1 {
+        padding-top: 5rem;
         font-size: 4rem;
     }
 }
@@ -207,7 +210,22 @@ h1 {
     height: 1000px;
 }
 
+@media (min-width:1441px) {
+    #cards_carrito {
+        height: 1700px;
+    }
+    #muestras_home {
+        height: 1000px;
+    }
+    #shop {
+        height: 2100px;
+    }
+}
+
 @media (max-width:1440px) {
+    #cards_carrito {
+        height: 1700px;
+    }
     #shop {
         height: 1500px;
     }
@@ -225,13 +243,28 @@ h1 {
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:768px) {
     #cards_carrito {
-        height: 2500px;
+        height: 1500px;
     }
     #shop {
-        height: 2100px;
+        height: 2800px;
     }    
+    #muestras_home {
+        height: 1500px;
+    }
+}
+
+@media (max-width:425px) {
+    #cards_carrito {
+        height: 2600px;
+    }
+    #shop {
+        height: 5000px;
+    }    
+    #muestras_home {
+        height: 2500px;
+    }
 }
 
 .card {
@@ -273,9 +306,15 @@ h1 {
     transition: .5s;
 }
 
+@media (max-width:768px) {
+    .card {
+        max-width: 45%;
+    }
+}
+
 @media (max-width:425px) {
     .card {
-        max-width: 42%;
+        max-width: 80%;
     }
 }
 
