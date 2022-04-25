@@ -1,0 +1,22 @@
+/* configuracion de la sección de parallax */ 
+
+section {
+    height: 250px;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.parallax {
+    background-image: url("../images/fondo.jpg");
+    height: 280px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        height: 0;
+    }
+}

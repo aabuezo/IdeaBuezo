@@ -1,0 +1,17 @@
+/* configuracion general comun a todas las secciones */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { /* etiqueta raiz */
+    font-size: 62.5%;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    background-color: #cbc0d3;
+}
+
+body {
+    background: linear-gradient(#735d78, #efc3e6);
+}

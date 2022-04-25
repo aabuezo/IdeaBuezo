@@ -1,0 +1,61 @@
+/* configuracion de la seccion de contacto */
+
+.contacto {
+    font-size: 1.2em;
+    width: 40%;
+    height: 620px;
+    margin: 4% auto;
+    color: white;
+    padding: 20px 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #735d78;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .elemento {
+        width: 100%;
+        margin: 5px;
+    }
+    textarea {
+        border: none;
+        width: 100%;
+        color: #735d78;
+        background-color: white;
+    }
+    .elemento {
+        label {
+            font-size: 1.2em;
+        }
+    }
+    input[type="submit"] {
+        cursor: pointer;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: #f0a6caaa;
+        &:hover {
+            padding: 10px 0;
+            background-color: #9c89b8c0;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contacto {
+        width: 80%;
+        margin: 20% auto;
+    }
+}
+
+.contacto__input {
+    width: 97%;
+    border: none;
+    color: #735d78;
+    padding: 5px 0;
+    background-color: white;
+}
+

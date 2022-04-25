@@ -1,0 +1,200 @@
+/* configuracion de la seccion de las cards */
+
+.contenedor {
+    height: 900px;  
+    width: 90%;
+    margin: 5% auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .lista-items {
+        width: 90%;
+    }
+    .cuadro-pago {
+        border: 1px solid white;
+        background-color: #9c89b84f;
+        border-radius: 15px;
+        width: 600px;
+        height: 60%;
+        margin: 2% auto;
+        font-size: 2rem;
+        color: lightgray;
+        text-align: right;
+        #titulo_total {
+            font-size: 2.2rem;
+            margin-right: 10%;
+            color: #735d78;
+            text-align: right;
+        }
+        p {
+            margin-right: 10%;
+            button {
+                width: 25%;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .cuadro-pago {
+        min-width: 300px;
+        #titulo_total {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.card-body {
+    color: lightgray;
+    #precio {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+        a {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+.muestras {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+#muestras_home {
+    height: 800px;
+}
+
+#shop {
+    height: 2100px;
+}
+
+#cards_carrito {
+    height: 1000px;
+}
+
+@media (min-width:1441px) {
+    #cards_carrito {
+        height: 1700px;
+    }
+    #muestras_home {
+        height: 1000px;
+    }
+    #shop {
+        height: 2100px;
+    }
+}
+
+@media (max-width:1440px) {
+    #cards_carrito {
+        height: 1700px;
+    }
+    #shop {
+        height: 1500px;
+    }
+}
+
+@media (max-width:1024px) {
+    #cards_carrito {
+        height: 1500px;
+    }
+    #muestras_home {
+        height: 1000px;
+    }
+    #shop {
+        height: 1200px;
+    }
+}
+
+@media (max-width:768px) {
+    #cards_carrito {
+        height: 1500px;
+    }
+    #shop {
+        height: 2800px;
+    }    
+    #muestras_home {
+        height: 1500px;
+    }
+}
+
+@media (max-width:425px) {
+    #cards_carrito {
+        height: 2600px;
+    }
+    #shop {
+        height: 5000px;
+    }    
+    #muestras_home {
+        height: 2500px;
+    }
+}
+
+.card {
+    max-width: 21%;
+    max-height: 100%;
+    margin: 5% auto;
+    padding: 10% auto ;
+    border: 1px solid white;  
+    background-color: #9c89b84f;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    img { 
+        max-width: 80%;
+        max-height: 80%;
+        margin:  10% auto;
+        opacity: .5;
+        border-radius: 15px;
+        &:hover {
+            opacity: 1;
+            box-shadow: 2px 2px 10px gray;
+        }
+    }
+    &:hover {
+        transform: scale(1.04);
+        transition: .5s;
+        box-shadow: 2px 2px 10px #F1E0AC;
+        font-size: 1.1rem;
+    }
+    
+    &:after {
+        transition: .5s;
+    }
+}
+
+
+@media (max-width:768px) {
+    .card {
+        max-width: 45%;
+    }
+}
+
+@media (max-width:425px) {
+    .card {
+        max-width: 80%;
+    }
+}
+
+.precio {
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    p {
+        font-size: .5em;
+    }
+    .descripcion {
+        font-size: 1.5rem;
+    }
+}

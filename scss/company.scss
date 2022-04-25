@@ -1,0 +1,46 @@
+/* configuracion de la sección de Company */
+
+.company {
+    font-size: 1.2em;
+    width: 50%;
+    height: 620px;
+    margin: 4% auto;
+    color: white;
+    padding: 5% 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #735d78;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center; 
+    .datos {
+        width: 40%;
+        height: 230px;
+        overflow-y: auto;
+        padding: 0 10px;
+        display: inline-block;
+        font-size: 1.2em;
+        #acerca {
+            padding-bottom: 20px;
+        }
+        #copyright {
+            padding-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 225px;
+        }
+    }    
+}
+
+@media (max-width: 1024px) {
+    .company {
+        width: 80%;
+        margin: 20% auto;
+        .datos {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
