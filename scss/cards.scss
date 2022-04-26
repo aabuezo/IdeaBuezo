@@ -13,7 +13,7 @@
     }
     .cuadro-pago {
         border: 1px solid white;
-        background-color: #9c89b84f;
+        background-color: #735d78;
         border-radius: 15px;
         width: 600px;
         height: 60%;
@@ -24,15 +24,20 @@
         #titulo_total {
             font-size: 2.2rem;
             margin-right: 10%;
-            color: #735d78;
+            color: white;
             text-align: right;
         }
         p {
             margin-right: 10%;
+            font-size: 2rem;
             button {
                 width: 25%;
                 font-size: 1.7rem;
             }
+        }
+        h2 {
+            margin-right: 10%;
+            font-size: 2.5rem;
         }
     }
 }

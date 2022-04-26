@@ -60,8 +60,8 @@ section {
 }
 
 .parallax {
-  background-image: url("../images/fondo.jpg");
-  height: 280px;
+  background-image: url("../images/fondo3.jpg");
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,6 +105,11 @@ section.deuxsoeurs h1 {
     font-size: 4rem;
   }
 }
+@media (min-width: 1024px) {
+  section.deuxsoeurs p {
+    font-size: 2rem;
+  }
+}
 /* configuracion de la seccion de las cards */
 .contenedor {
   height: 900px;
@@ -120,7 +125,7 @@ section.deuxsoeurs h1 {
 }
 .contenedor .cuadro-pago {
   border: 1px solid white;
-  background-color: rgba(156, 137, 184, 0.3098039216);
+  background-color: #735d78;
   border-radius: 15px;
   width: 600px;
   height: 60%;
@@ -132,15 +137,20 @@ section.deuxsoeurs h1 {
 .contenedor .cuadro-pago #titulo_total {
   font-size: 2.2rem;
   margin-right: 10%;
-  color: #735d78;
+  color: white;
   text-align: right;
 }
 .contenedor .cuadro-pago p {
   margin-right: 10%;
+  font-size: 2rem;
 }
 .contenedor .cuadro-pago p button {
   width: 25%;
   font-size: 1.7rem;
+}
+.contenedor .cuadro-pago h2 {
+  margin-right: 10%;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 768px) {

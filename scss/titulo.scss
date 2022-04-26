@@ -33,3 +33,11 @@ section.deuxsoeurs {
         }
     }
 }
+
+@media (min-width:1024px) {
+    section.deuxsoeurs {
+        p {
+            font-size: 2rem;
+        }
+    }
+}
