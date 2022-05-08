@@ -1,0 +1,33 @@
+Map y map-get()
+---------------
+
+Se define un mapa de estilos en header.scss y se aplica por medio de map-get al nav
+
+
+Extends
+-------
+
+Se modifico el archivo index.html:
+Linea 54:
+- tenia un id #muestras_home y una clase .muestras
+- se cambio el id por la clase .muestras--home que extiende de .muestras
+
+Se modifico el archivo cards.scss:
+Linea 68 en adelante:
+- se convirtio el id #muestras_home en la clase .muestras--home que extiende de muestras
+- se cambio el id en los @media
+
+Linea 145 en adelante:
+- se abstraen las caracteristicas generales de las cards en una clase .cards (comun a todas)
+
+Mixins
+------
+
+Se modifico cards.scss agregando un mixin para establecer la altura de los elementos
+- se cambiaron todos los height por @include alto()
+
+SEO
+---
+
+Se incluyeron los meta keywords y description en todos los encabezados de los .html
+

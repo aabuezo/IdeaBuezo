@@ -1,7 +1,13 @@
 /* configuracion del header y del menu */
 
+$estilos: (
+    ancho: 100%,
+    nav-bg-color: #735d78,
+    nav-bg-color-hover: #9c89b8
+);
+
 header {
-    width: 100%;
+    width: map-get($estilos, ancho);
     position: fixed;
     top: 0px;
     z-index: 2;
@@ -9,15 +15,15 @@ header {
 }
 
 nav {
-    width: 100%;
-    background-color: #735d78;
+    width: map-get($estilos, ancho);
+    background-color: map-get($estilos, nav-bg-color);
     ul {
         li {
             padding: 5px 15px 0;
             font-size: 2.2rem;
         }
         li:hover {
-            background-color:#9c89b8;
+            background-color: map-get($estilos, nav-bg-color-hover);
             border-radius: 5px;
         }
     }

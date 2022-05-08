@@ -1,7 +1,11 @@
 /* configuracion de la seccion de las cards */
 
+@mixin alto($alto) {
+    height: $alto;
+}
+
 .contenedor {
-    height: 900px;  
+    @include alto(900px);
     width: 90%;
     margin: 5% auto;
     padding: 2%;
@@ -16,7 +20,7 @@
         background-color: #735d78;
         border-radius: 15px;
         width: 600px;
-        height: 60%;
+        @include alto(60%);
         margin: 2% auto;
         font-size: 2rem;
         color: lightgray;
@@ -42,15 +46,6 @@
     }
 }
 
-@media (max-width:768px) {
-    .cuadro-pago {
-        min-width: 300px;
-        #titulo_total {
-            font-size: 1.5rem;
-        }
-    }
-}
-
 .card-body {
     color: lightgray;
     #precio {
@@ -64,6 +59,22 @@
     }
 }
 
+@media (max-width:768px) {
+    .cuadro-pago {
+        min-width: 300px;
+        #titulo_total {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .cuadro-pago {
+        br {
+            display: none;
+        }
+    }
+}
 
 .muestras {
     display: flex;
@@ -72,76 +83,77 @@
     align-content: flex-start;
 }
 
-#muestras_home {
-    height: 800px;
+.muestras--home {
+    @extend .muestras;
+    @include alto(800px);
 }
 
 #shop {
-    height: 2100px;
+    @include alto(2100px);
 }
 
 #cards_carrito {
-    height: 1000px;
+    @include alto(1000px);
 }
 
 @media (min-width:1441px) {
     #cards_carrito {
-        height: 1700px;
+        @include alto(1700px);
     }
-    #muestras_home {
-        height: 1000px;
+    .muestras--home {
+        @include alto(1000px);
     }
     #shop {
-        height: 2100px;
+        @include alto(1600px);
     }
 }
 
 @media (max-width:1440px) {
     #cards_carrito {
-        height: 1700px;
+        @include alto(1700px);
     }
     #shop {
-        height: 1500px;
+        @include alto(1500px);
     }
 }
 
 @media (max-width:1024px) {
     #cards_carrito {
-        height: 1500px;
+        @include alto(1500px);
     }
-    #muestras_home {
-        height: 1000px;
+    .muestras--home {
+        @include alto(1000px);
     }
     #shop {
-        height: 1200px;
+        @include alto(1200px);
     }
 }
 
 @media (max-width:768px) {
     #cards_carrito {
-        height: 1500px;
+        @include alto(3500px);
     }
     #shop {
-        height: 2800px;
+        @include alto(2700px);
     }    
-    #muestras_home {
-        height: 1500px;
+    .muestras--home {
+        @include alto(1500px);
     }
 }
 
 @media (max-width:425px) {
     #cards_carrito {
-        height: 2600px;
+        @include alto(2600px);
     }
     #shop {
-        height: 5000px;
+        @include alto(5000px);
     }    
-    #muestras_home {
-        height: 2500px;
+    .muestras--home {
+        @include alto(2500px);
     }
 }
 
-.card {
+.cards {
     max-width: 21%;
     max-height: 100%;
     margin: 5% auto;
@@ -154,10 +166,15 @@
     align-items: center;
     justify-items: center;
     position: relative;
+}
+
+.card {
+    @extend .cards;
     img { 
         max-width: 80%;
         max-height: 80%;
-        margin:  10% auto;
+        margin-left: 10%;
+        margin: 10% auto 10% 10%;
         opacity: .5;
         border-radius: 15px;
         &:hover {
