@@ -1,0 +1,42 @@
+Daniel
+
+Hola Ale buenas tardes. Espero estes bien.
+
+
+Paso a darte devolución de tu proyecto:
+
+
+Aspectos a resaltar:
+
+
+    En líneas generales es un sitio correcto a nivel código, con ciertos detalles que te daré en la siguiente parte.
+    La forma de escribirlo es bastante prolija, muy bien indentado lo que hace que sea fácil de leer.
+    En líneas generales buen uso de SASS, sus propiedades de anidación, el & y map.
+    Correcto uso de clases y reutilización de las mismas.
+    Se adapta bien a distintos dispositivos sin crear scroll a la derecha.
+    Uso de etiquetas SEO.
+    Muy buen uso de Bootstrap, sus clases y componentes.
+    Nombres de archivos y organización de los mismos y carpetas, correctos
+
+
+Aspectos a mejorar:
+
+
+    En las secciones donde tienes cards, repites el id="precio" en todas ellas. Tal como lo dijimos en clase, recuerda que un id debe ser único y no es apto para su reutilización en varios elementos, para eso mejor usar clases.
+    Aún usas <br> para generar espaciado. Recuerda que no es recomendable usar <br>, para esto es mejor usar margins o paddings según corresponda. En la sección carrito es donde tienes más.
+    Recuerda agregar un texto descriptivo a los atributos alt de las imágenes.
+    Si bien usaste etiquetas seo (meta y description), las mismas son prácticamente iguales en todas las secciones. Recuerda que estas deben ser con info lo mas personalizada posible para cada sección.
+    Recuerda que los archivos sass que no sean tu principal deben comenzar con un _. Ejemplo: _cards.scss, _company.scss, _contacto.scss.
+
+
+CALIFICACIÓN: 8
+
+
+Es un excelente trabajo, pero ten en cuento que los aspectos a mejorar del 1 al 3 son puntos bastante delicados en cuánto a semántica y funcionamiento futuro de los sitios que construyas. De ahora en más en tus próximos proyectos sé que seguirás mejorando aceleradamente, pero es importante la atención hacia estos detalles.
+
+
+No hay más secretos que practicar, practicar y practicar para mejorar cada vez más.
+
+
+Felicitaciones por haber llegado hasta aquí, te deseo todo o mejor de ahora en más. Un gusto haberte acompañado en este camino
+
